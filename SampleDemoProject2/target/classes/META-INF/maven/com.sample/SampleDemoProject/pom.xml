@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sample</groupId>
+  <artifactId>SampleDemoProject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  <dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-plugin</artifactId>
+  <version>3.0.0-M5</version>
+  <type>maven-plugin</type>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+		<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>4.8.1</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>4.8.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>4.8.1</version>
+			<scope>compile</scope>
+		</dependency>
+<!-- <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>6.9.1</version>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>6.9.1</version>
+</dependency>
+https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>6.9.1</version>
+    <scope>compile</scope>
+</dependency> -->
+<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+
+<!-- <dependency>
+      <groupId>com.vimalselvam</groupId>
+      <artifactId>cucumber-extentsreport</artifactId>
+      <version>3.0.2</version>
+    </dependency>
+<dependency>
+<groupId>com.aventstack</groupId>
+<artifactId>extentreports</artifactId>
+<version>4.0.9</version>
+</dependency> -->
+<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports-cucumber4-adapter</artifactId>
+			<version>1.0.12</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-java</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+</dependencies>
+</project>
